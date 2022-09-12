@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\estilos.css">
+    <title>Latam Airlines</title>
+</head>
+<body>
+    <header>
+<div class="latam">
+<a title="Pagina Principal" href="Index.html"> <img src="images\latam.png"  ></a></div>
+<input type="checkbox" id="check">
+<label for="check" class="mostrar-menu">
+&#8801
+</label>
+<nav class="menu">
+        <a title=" Abrir Ticket" href="tickets\sigpag.html"> Destinos </a>
+        <a title=" Abrir Check-In" href="check/reserva.html"> Check-In  </a> 
+        <a title=" Abrir Contact" href="contactos\contact.html"> Contact Center  </a> 
+        <label for="check" class="esconder-menu">
+            &#215
+        </label>
+</nav>
+    </header>
+
+    <section id="banner">
+        <div class="contenido-banner">
+            <h3>Vuela por Colombia y el mundo con LATAM <br> Airlines</h3>
+            <p>Los mejores vuelos a destinos nacionales los encuentras con nosotros<br>  no pierdas la oportunidad
+             de disfrutar todas las cuidades y lugares historicos<br>  que ofrece nuestra colombia con la comodidad de LATAM y todos sus beneficios.  </p>
+            <a href="#" class="boton-empezar">Ver Destinos</a>
+            
+        </div>
+    </section>
+    <section id="personas">
+        <div>
+            <div class="destinos">
+            <img src="images/perei.jpg" alt="">
+            <h4>Bogota</h4>
+            <p>Vuelo directo de solo ida categoria economica </p>
+            <a href="bogota/bogota.html" class="boton-saber-mas">Saber Mas</a></div>
+        </div>
+        <div>
+            <div class="destinos">
+            <img src="images/medellin1.png" alt="">
+            <h4>Medellin</h4>
+            <p>Vuelo directo de solo ida categoria Premiun Econimica </p>
+            <a href="medellin/medellin.html" class="boton-saber-mas">Saber Mas</a></div>
+        </div>
+        <div>
+            <div class="destinos">
+            <img src="images/santam.jpg" alt="">
+            <h4>Santa Marta</h4>
+            <p>Vuelo directo de solo ida categoria Premiun Business </p>
+            <a href="#" class="boton-saber-mas">Saber Mas</a></div>
+        </div>
+    </section>
+    <section id="iconos">
+        <div class="contenido-iconos">
+            <div>
+                <img src="images/silla.png " alt="">
+                <h6><a href="inicio.html">Servicios Especiales</h6></a>
+                <p>Solicitar silla de ruedas o acompañamiento a menores</p>
+            </div></a>
+            <div>
+                <img src="images/pets.png " alt="">
+                <h6><a href="inicio.html">Mascotas</h6></a>
+                <p> Quiero llevar mi mascota </p>
+            </div>
+            <div id="icono-deportivo">
+                <img src="images/deportivo.png " alt="">
+                <h6><a href="inicio.html">Elementos Deportivos</h6></a>
+                <p>Informacion sobre elementos deportivos grandes</p>
+            </div>
+        </div>
+    </section>
+    <section id="contactos">
+        <h4>CONTACTA CON NOSOTROS</h4>
+        <form action="#">
+            <div class="datos-form">
+                <div class="nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="mensaje">
+               <label for="mensaje">Mensaje</label>
+               <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea> 
+            </div>
+            <div class="boton-formulario">
+                <a href="Index.html" onclick="alert('El mensaje fue enviado con exito!');" class="boton-saber-mas">Enviar mensaje</a>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>&copy;2022 LATAM Airlines Colombia. NIT: 890.704.196-6, Aerovias de Integración Regional S.A - Aires S.A. Av. El Dorado No.103-08 Entrada 1 - Hangar. customer_service@sac.latam.com. 601 - 5185800</p>
+    </footer>
+</body>
+</html>

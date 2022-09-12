@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<title>
+    Latam Airlines
+</title>
+<link rel="stylesheet" href="estilo.css">
+<body>
+    <header>
+    <div class="logo">
+    <a title="images\Pagina Inicio" href="Index.html"> <img src="images\latam.png" width="500" height="200" ></a>
+</div>
+
+    <nav> 
+        <h2>
+        <img src="images\ticket.png"  width="60" height="40"><a title=" Abrir Ticket" href="tickets\sigpag.html"> <font color="yellow"> Compra Ticket  </a></font>
+        <img src="images\avion.gif"  width="60" height="40"><a title=" Abrir Vuelos" href="check/reserva.html"> <font color="blue"> Check-In  </a> </font>
+        <img src="images\contact.png"  width="60" height="40"><a title=" Abrir Contact" href="contactos\contact.html"> <font color="red">   Contact Center  </a> </font> 
+    </h2>
+    </nav>
+</header>
