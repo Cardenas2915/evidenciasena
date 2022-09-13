@@ -90,6 +90,21 @@
         padding: 10px 0px;
         font-family:"Yu Gothic UI Light";
     }
+
+    /*Barra de navegacion */
+
+    #panel {
+        margin: 0 auto;
+        padding: 0 250px;
+        border: 1px solid black;
+    }
+    .barranav{
+        padding: 10 50px;
+        text-decoration: none;
+        color: blue;
+        align-items: center;
+        justify-content: space-between;
+    }
     
     
 @media(max-width:768px){
