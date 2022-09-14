@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+ #personas {
+    padding: 20px 20px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ }
+
+ #personas div{ 
+    padding: 1px 1px;
+    border-radius: 15px;
+ }
+ #personas img{
+    border-radius: 15px;
+    width:400px;
+ }
+ .destinos {
+    margin: 0 10px;
+    border-radius: 30px;
+    transition: all 0.4s;
+    
+    
+ }
+ .destinos h2{
+    text-align: left;
+    padding: 2px 15px;
+    font-family:"Yu Gothic UI Light";
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(27, 0, 136);
+    background:rgb(225, 225, 225) ;
+    border-radius: 10px 10px 0 0px; 
+    top: 0px;
+ }
+ 
+
+ .destinos h4{
+    font-family:"Yu Gothic UI Light";
+    font-weight: 500;
+    font-size: 25px;
+    color: red;
+   
+ }
+ .destinos p, a{
+    font-family:"Yu Gothic UI Light";
+    font-weight: 500;
+    font-size: 15px;
+    color: red;
+ }
+ 

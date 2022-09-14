@@ -109,6 +109,7 @@ header{
     font-weight:400;
     font-family:"Yu Gothic UI Light";
 }
+/* dESTINOS */
 #personas{
     padding: 50px 50px;
     display: flex;
@@ -116,12 +117,11 @@ header{
     text-align: center;
 }
 
-/* dESTINOS */
-
 #personas img{
     border-radius: 15px;
     height: 40%;
 }
+
 #personas div{
     padding: 30px 30px;
 }
@@ -158,7 +158,7 @@ header{
     width: 400px ;
     transition: all 0.4s;
 }
-.destinos img{
+.destinos img {
     width: 80%;
 }
 .destinos:hover{
