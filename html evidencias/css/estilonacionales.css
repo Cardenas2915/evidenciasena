@@ -3,12 +3,9 @@
     padding: 0;
     
     }
-    body{
-      background: whitesmoke;
-    }
+    
  #personas {
-    padding: 20px 20px;
-    border: 1px solid red;
+    padding: 20px 10px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -24,9 +21,15 @@
     width:400px;
  }
  .destinos {
+   flex-direction: column;
+   justify-content: center;
+   display: block;
     margin: 0 20px;
-    border-radius: 30px;
-    transition: all 0.4s;
+    border-radius:0.5rem;
+    border-color: rgb(48, 48, 48);
+    transition: all 0.3s;
+    box-shadow: rgb(16 0 79 / 12%) 0px 0.125rem 0.5rem;
+    cursor: pointer;
     
  }
  .destinos:hover{
@@ -37,10 +40,9 @@
     text-align: left;
     padding: 2px 15px 10px;
     font-family:"Yu Gothic UI Light";
-    font-weight: bold;
     font-size: 15px;
     color: rgb(27, 0, 136);
-    background:rgb(225, 225, 225) ;
+    background:rgb(223, 226, 246) ;
     border-radius: 10px 10px 0px 0px; 
     position:relative ;
     top: -20px;
@@ -52,47 +54,49 @@
    padding:0 15px;
    justify-items: baseline;
     font-family:"Yu Gothic UI Light";
-    font-weight: 500 bold;
+    font-weight: bold;
     font-size: 25px;
     position: relative;
     top: -25px;
-    border: 1px solid red;
     z-index: 1;
+    background: whitesmoke;
+    
  }
 
  .destinos p{
+   
    padding: 0px 9px;
    margin: 5px 0px;
     font-family:"Yu Gothic UI Light";
     font-weight: 500;
-    font-size: 15px;
-    background: rgb(199, 199, 199);
+    font-size: 1rem;
+    background: rgb(238, 237, 249);
     display: inline-block;
     border-radius: 20px;
     color:rgb(27, 0, 136);
     position: relative;
-    top: -5%;
+    top: -1rem;
     right: 100px;
+    font-weight:400;
  }
  .destinos h3{
    padding: 0px 9px;
-  
     font-family:"Yu Gothic UI Light";
     font-weight: 500;
     font-size: 15px;
-    background: rgb(199, 199, 199);
+    background: rgb(238, 237, 249);
     display: inline-block;
     border-radius: 20px;
     position: relative;
-    top: -5%;
+    top: -1rem;
     right: 95px;
+    
  }
  .precio{
    text-align: left;
    padding: 0px 15px;
    margin: 5px 0px;
     font-family:"Yu Gothic UI Light";
-    font-weight: bold;
     font-size: 15px;
     position: relative;
     top: -15px;
@@ -116,4 +120,16 @@
     top: -15px;
     
  }
+
+ @media(max-width:768px){
+   #personas{
+      flex-direction: column;
+   }
+   .destinos{
+      display: block;
+      margin:20px auto;
+      
+   }
+ }
+
  
