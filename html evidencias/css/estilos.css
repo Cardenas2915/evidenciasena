@@ -21,9 +21,7 @@ header{
     margin-left: 120px;
     
 }
-.latam img:hover{
-    transform: scale(1.1);
-}
+
 
 .menu a{
     position: relative;
@@ -109,31 +107,19 @@ header{
     font-weight:400;
     font-family:"Yu Gothic UI Light";
 }
+
+
 /* dESTINOS */
+
 #personas{
-    padding: 50px 50px;
+    padding: 100px 50px;
     display: flex;
     justify-content: center;
     text-align: center;
+    
 }
 
-#personas img{
-    border-radius: 15px;
-    height: 40%;
-}
 
-#personas div{
-    padding: 30px 30px;
-}
-#personas div h4{
-    color: rgb(27, 0, 136);
-    font-size: 30px;
-    margin: 15px 0px;
-}
-#personas div p{
-    font-size: 20px;
-    font-family:"Yu Gothic UI Light";
-}
 .boton-saber-mas{
     font-family:"Yu Gothic UI Light";
     font-weight: bold;
@@ -151,20 +137,155 @@ header{
     transform: scale(1.1);
     color: white;
 }
+
 .destinos{
-    padding: 5px 10px;
-    border-radius: 30px;
+    padding:0 auto;
+    margin: 0 40px;
+    border-radius: 15px;
     align-self: baseline;
-    width: 400px ;
+    width: 400px;
+    box-shadow: rgb(16 0 79 / 12%) 0px 0.125rem 0.5rem;
     transition: all 0.4s;
+    
 }
 .destinos img {
-    width: 80%;
+    width:100%;
+    border-radius: 15px;
 }
-.destinos:hover{
+
+.destinos h2 {
+    text-align: left;
+    padding: 2px 15px 10px;
+    font-family:"Yu Gothic UI Light";
+    font-size: 15px;
+    color: rgb(27, 0, 136);
+    background:rgb(223, 226, 246) ;
+    border-radius: 10px 10px 0px 0px; 
+    position:relative ;
+    top: -20px;
+ }
+
+ .destinos h4{
+    border-radius: 10px 10px 0 0px;
+    text-align: left;
+    padding:0 15px;
+    justify-items: baseline;
+     font-family:"Yu Gothic UI Light";
+     font-weight: bold;
+     color: rgb(16, 0, 79);
+     font-size: 20px;
+     position: relative;
+     top: -25px;
+     z-index: 1;
+     background:white ; 
+  }
+
+  
+ .destinos p{
+   
+    padding: 0px 9px;
+    margin: 5px 0px;
+     font-family:"Yu Gothic UI Light";
+     font-weight: 500;
+     font-size: 1rem;
+     background: rgb(238, 237, 249);
+     display: inline-block;
+     border-radius: 20px;
+     color:rgb(27, 0, 136);
+     position: relative;
+     top: -1rem;
+     right: 100px;
+     font-weight:400;
+  }
+  .destinos h3{
+    padding: 0px 9px;
+     font-family:"Yu Gothic UI Light";
+     font-weight: 500;
+     font-size: 15px;
+     background: rgb(238, 237, 249);
+     display: inline-block;
+     border-radius: 20px;
+     position: relative;
+     top: -1rem;
+     right: 95px;
+     
+  }
+
+  .precio{
+    text-align: left;
+    padding: 0px 15px;
+    margin: 5px 0px;
+     font-family:"Yu Gothic UI Light";
+     font-size: 15px;
+     position: relative;
+     top: -15px;
+  }
+  .cop{
+    text-align: left;
+    padding: 0px 15px;
+    margin: 5px 0px;
+     font-family:"Yu Gothic UI Light";
+     font-weight: bold;
+     font-size: 25px;
+     position: relative;
+     top: -15px;
+  }
+  .iva{
+    text-align: left;
+    padding: 0px 15px;
+     font-family:"Yu Gothic UI Light";
+     font-size: 12px;
+     position: relative;
+     top: -15px;
+     
+  }
+
+  .buscar{
+    padding:40px 0px 170px 0px;
+    margin: 0 20px;
+    border-radius: 15px;
+    align-self: baseline;
+    width: 400px;
+    box-shadow: rgb(16 0 79 / 12%) 0px 0.125rem 0.5rem;
+    transition: all 0.4s;
+    
+}
+.buscar img{
+    width:50%;
+    position: relative;
+    top: 2rem;
+    left: 6rem;
+}
+.buscar a{
+    color: rgb(102, 23, 163);
+    text-decoration: underline;
+    position: relative;
+    top: 6rem;
+    font-family:"Yu Gothic UI Light";
+     font-size: 18px;
+     font-weight: bold;
+     right:7rem;
+     
+}
+.buscar:hover{
+    box-shadow: 1px 3px 3px 0px grey;
+    transform: scale(1.1);
+    background:rgba(102, 23, 163, 0.137);
+    transition: all 0.5s ease 0s;
+}
+
+.buscar a:hover{
+    color: rgb(70, 88, 223);
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.destinos:hover
+{
     box-shadow: 1px 3px 3px 0px grey;
     transform: scale(1.1);
 }
+
 
 /* SERVICIOS ESPECIALES */
 #iconos {
@@ -328,6 +449,10 @@ footer{
   /*Destinos */
   #personas{
     flex-direction: column;
+}
+.destinos{
+    margin-bottom: 20px;
+    
 }
 /* Servicios especiales */
 .contenido-iconos{
