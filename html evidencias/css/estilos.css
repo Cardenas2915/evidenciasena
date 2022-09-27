@@ -21,7 +21,7 @@ header{
 .latam img{
     width: 8rem;
     height:auto;
-    margin-left: 120px;
+    margin-left:10rem;
 }
 
 
@@ -119,11 +119,10 @@ header{
     display: flex;
     position: relative;
     
-}
-
-.info{
-    display: inline-block; 
     
+}
+.info{
+    margin-right: 60px;
 }
 .info img{
     width:40px ;
@@ -139,7 +138,7 @@ header{
     color: rgb(27, 0, 136);
 }
 .info span{
-    color:rgb(70, 88, 223);
+    color:rgb(102, 23, 163);
     font-size: 20px;
     font-weight: bold;
 }
@@ -149,34 +148,35 @@ header{
     font-size: 18px;
 }
 .covid2 {
-    flex-direction: column;
-    height: 100%;
-    width:48%;
-    margin: 0 auto;
+   
 }
 .cambios{
-    display: inline-block;
-    margin: 10px auto;
-    height:auto;
-    width:38rem;
-    padding: 10px 10px;
     
+    margin: 10px 0;
+    padding:10px;
+}
+.derecha{
+    display: flex;
+    align-items: center;
+    justify-items:flex-end;
 }
 
 .cambios a{
+    display: flex;
+    align-items: center;
     text-align:left;
      font-weight: bold;
      font-size:20px;
      color:rgb(92, 92, 92);
      text-decoration: none; 
-     padding:0px 20px;
+     
 }
 
 .cambios img{
     width:40px ;
-    height: auto;
-    float: left;  
+    height: auto; 
     border-radius: 5px;   
+    margin-right: 20px;
 }
 
 .cancelaciones{
@@ -506,13 +506,64 @@ form textarea::placeholder{
     
 }
 /* footer */
+#contenido-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
 footer{
-    background: grey;
-    color: rgba(255, 255, 255, 0.247);
-    text-align: center;
-    padding: 10px 0px;
+    background: rgba(184, 184, 184, 0.342) ;
+    padding:30px 0px;
+    border-top: 1px solid rgb(128, 128, 128);
+    display: flex;   
+     
 }
 
+footer img{
+    width:auto;
+    height:3rem;
+    padding-right:15px;
+}
+.texto-footer{
+    margin-right:30px;
+    color:rgb(136, 135, 135);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.images-footer{
+    display: flex;
+    color:rgb(136, 135, 135);
+    font-size: 13px;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.images-footer img{
+    width: 3rem;
+    height:auto;
+    padding:0px 10px;
+}
+.images2-footer img{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 9rem;
+    height:auto;
+}
+
+@media(max-width:1334px){
+    #covid{
+        flex-direction: column;
+    }
+    .info{
+        border-bottom: 1px solid grey;
+        margin: 0;
+        flex-direction: column;
+    }
+}
 @media(max-width:768px){
     .mostrar-menu,
     .esconder-menu{
@@ -549,17 +600,18 @@ footer{
 }
 .info{
     border-bottom: 1px solid grey;
+    margin: 0;
 }
   /*Destinos */
   #personas{
     flex-direction: column;
 }
-#banner{
-    font-size: 5px;
-}
+
 .destinos{
-    margin-bottom: 20px;
-    
+    margin:20px auto ;
+}
+.buscar{
+    margin:20px auto ;
 }
 /* Servicios especiales */
 .contenido-iconos{
