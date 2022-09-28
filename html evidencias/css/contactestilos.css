@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Yu Gothic UI Light";
+    }
+    /* BARRA DE NAVEGACION */
+    header{
+       width: auto; 
+       height: 80px;
+       background: rgb(16, 0, 79);
+       padding: 0 50px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    .latam{
+        display: flex;
+        font-weight: 200;
+        
+    }
+    .latam img{
+        width: 8rem;
+        height:auto;
+        margin-left:10rem;
+    }
+    
+    
+    .menu a{
+        position: relative;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px;
+        transition: 0.4s;
+        font-size:15px;
+        font-weight:bold;
+        
+        
+    }
+    .mostrar-menu,
+    .esconder-menu{
+       color: white;
+       font-size: 30px;
+       cursor: pointer; 
+       display: none;
+       transition: 0.4s;
+    }
+    .mostrar-menu{
+        order: 1;
+    }
+    .menu a:hover,
+    .mostrar-menu:hover,
+    .esconder-menu:hover {
+        background:rgb(44, 24, 131);
+        padding: 10px;
+        border-radius: 15px;
+        
+        
+    }
+    #check{
+        display: none;
+    }

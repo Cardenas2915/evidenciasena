@@ -1,21 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-Contact
-</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilocheck.css">
+    <link rel="icon" type="image/png" href="../images/logosinfondo.png">
+    <title>Latam Airlines</title>
 </head>
-<body style="background-color:#25864a;">
-    <h1 align="center" style="background-color:aqua" ><font color="red">Ahora tenemos Check-In automatico en Colombia</h1></font>
+<body>
+    <header>
+<div class="latam">
+<a title="Pagina Principal" href="../Index.html"> <img src="../images\latam.png"  ></a></div>
+<input type="checkbox" id="check">
+<label for="check" class="mostrar-menu">
+&#8801
+</label>
+<nav class="menu">
+        <a title=" Abrir Ticket" href="../tickets\sigpag.html"> Destinos </a>
+        <a title=" Abrir Check-In" href="../check/reserva.html"> Check-In  </a> 
+        <a title=" Abrir Contact" href="../contactos\contact.html"> Contact Center  </a> 
+        <label for="check" class="esconder-menu">
+            &#215
+        </label>
+</nav>
+    </header>
 
+    <div class="check-in"></div>
 
-<ul>
-<il><h3> Si compraste un viaje nacional en nuestra nueva experiencia ¡Tu Check-in estará listo!</li></h3>
-  <il><h3> Para vuelos internacionales, comprados en nuestra versión clásica, agencia u otro sitio web, deben completar los datos de viaje a las 72 horas para activar el Check-in automático.</li></h3>
-</ul>
+    <section id="texto-check">
+    <div class="automatico">
+      <h1> Ahora tenemos <span> Check-in automático</span> en <br> Colombia</h1>
+      <ul class="texto-li">
+        <li class="texto1">Si compraste un <strong>viaje nacional</strong>  en nuestra nueva experiencia ¡Tu Check-in <br> <strong> estará listo!</strong></li>
+        <li class="texto2">Para vuelos <strong>internacionales</strong> , comprados en <strong> nuestra versión clásica, agencia u <br> otro sitio web</strong>, deben completar los datos de viaje a las 72 horas para activar el <br> Check-in automático</li>
+      </ul>
+      <p> ¡Ahora solo deberás preocuparte de disfrutar tu destino!</p>
+    </div>
 
+    <div class="buscador">
+      <h2>Busca tu viaje</h2>
+      <p>Ingresa los datos del viaje:</p>
+      <input class="codigo" type="text" name="codigo"  placeholder="Nº Orden / Código reserva">
+      <a class="donde" href="#">¿Dónde encontrarlos?</a>
+      <input class="pasajero" type="text" name="pasajero" placeholder="Apellido de pasajero">
+        <a class="buscar" href="#" >Buscar</a>
+    </div>
+    </section>
 </body>
-<foter>
-  <hr></hr>
-  <h5><img src="..//images\latamsinfondo.png" align="absmiddle" width="110" height="40"> <font color="white"> © 2022 LATAM Airlines Colombia. NIT: 890.704.196-6, Aerovias de Integración Regional S.A - Aires S.A. Av. El Dorado No.103-08 Entrada 1 - Hangar. customer_service@sac.latam.com. 601 - 5185800</h5></font>
-</foter>
+<footer> 
+  <section id="contenido-footer">   
+  <img src="../images/latam2.png" alt="">
+  <div class="texto-footer">
+  <p>&copy;2022 LATAM Airlines Colombia. NIT: 890.704.196-6, Aerovias de Integración Regional S.A - Aires S.A. Av. El Dorado No.103-08 Entrada 1 - Hangar. <br> customer_service@sac.latam.com. 601 - 5185800</p></div>
+  <div class="images-footer">
+      <p>certificado por:</p>
+      <img src="../images/certificado.png" alt="">
+  </div>
+  <div class="images2-footer">
+      <img src="../images/Supertransporte.png" alt="">
+  </div>
+</section>
+</footer>
 </html>
