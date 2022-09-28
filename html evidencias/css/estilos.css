@@ -85,7 +85,7 @@ header{
     
 }
 .contenido-banner h3{
-    font-size: 35px;
+    font-size: 2.5rem;
     font-weight:500;
     padding: 10px 0px;
     font-family:"Yu Gothic UI Light";
@@ -93,7 +93,7 @@ header{
     
 }
 .boton-empezar{
-    font-size:18px;
+    font-size:1.1rem;
     font-family:"Yu Gothic UI Light";
     font-weight: bold ;
 }
@@ -104,7 +104,7 @@ header{
 }
 
 .contenido-banner p{
-    font-size:20px;
+    font-size:1.2rem;
     font-weight:400;
     font-family:"Yu Gothic UI Light";
 }
@@ -618,6 +618,15 @@ footer img{
 .contenido-iconos div{
     border: none;
     padding: 20px 0px 0px 0px;
+}
+.contenido-banner h3{
+    font-size:28px ;
+}
+.contenido-banner p{
+    font-size:19px ;
+}
+.boton-empezar{
+    font-size: 18px;
 }
 
 /* FORMULARIO */
