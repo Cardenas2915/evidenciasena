@@ -619,6 +619,9 @@ footer img{
   }
   #check:checked ~ .menu{
     right: 0;
+    display: none;
+    display: block;
+
   }
 
   
