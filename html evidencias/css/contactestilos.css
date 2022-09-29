@@ -3,6 +3,11 @@
     padding: 0;
     font-family:"Yu Gothic UI Light";
     }
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
     /* BARRA DE NAVEGACION */
     header{
        width: auto; 
@@ -23,7 +28,12 @@
         height:auto;
         margin-left:10rem;
     }
-    
+    .menu img{
+     display: none;
+    }
+    .logo_responsive img{
+        display: none;
+    }
     
     .menu a{
         position: relative;
@@ -53,10 +63,257 @@
     .esconder-menu:hover {
         background:rgb(44, 24, 131);
         padding: 10px;
-        border-radius: 15px;
-        
-        
+        border-radius: 15px; 
     }
     #check{
         display: none;
     }
+
+    /*PANEL*/
+    #panel{
+        display: flex;
+        align-items: center;
+        background-image: url(../images/ayuda.jpg);
+        width: 100%;
+        height:280px;
+        background-size:cover ;
+        border-radius: 0px 0px 20px 20px;
+    }
+    #panel::before{
+        content: " ";
+        background: rgba(27, 0, 136, 0.568);
+        position: absolute;
+        width: 100%;
+        height: 280px;
+        left: 0;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .ayuda{
+        margin: 0 auto;
+        padding: 20px;
+        text-align: left;
+        position: relative;
+        right: 5%;
+        
+    }
+    .ayuda h1{
+        display: inline-block;
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .ayuda p{
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+.buscador{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;
+    background: white;
+    position: relative;
+    right: 15%;
+}
+.buscador img{
+    margin: 0;
+    width: auto;
+    height: 2rem;
+    float: right;
+    
+}
+.buscar{
+    padding: 15px;
+    font-size: 1rem;
+    width: 40rem;
+    border-radius: 10px;
+    margin: 1px;
+    
+}
+
+/*covid*/
+#info-covid{
+    display: flex;
+    margin-bottom: 40px;
+}
+.informacion{
+    position: relative;
+    top: -2rem;
+    z-index: 3;
+    display: inline-block;
+    margin: 0 auto;
+    background: rgba(238,237,249,255);
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+.informacion h1{
+    color:rgb(16, 0, 79);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.informacion img{
+    position: absolute;
+    top: 0.6rem;
+    left: 1rem;
+    width: 30px;
+}
+.informacion p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.informacion a{
+    color:rgb(16, 0, 79); 
+    font-weight: bold;
+}
+
+/*dudas*/ 
+
+#dudas{
+    padding: 1rem 15rem;
+    border:1px solid red;
+}
+.texto h1{
+    display: inline-block;
+    border: 1px solid black;
+    color: rgb(16, 0, 79);
+    font-weight: lighter;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+.corona{
+    display: inline-flex;
+    border: 1px solid black;
+}
+
+
+/*Footer*/
+
+#contenido-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+footer{
+    background: rgba(184, 184, 184, 0.342) ;
+    padding:30px 0px;
+    border-top: 1px solid rgb(128, 128, 128);
+    display: flex;   
+    margin-top: auto;
+     
+}
+
+footer img{
+    width:auto;
+    height:3rem;
+    padding-right:15px;
+}
+.texto-footer{
+    margin-right:30px;
+    color:rgb(136, 135, 135);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.images-footer{
+    display: flex;
+    color:rgb(136, 135, 135);
+    font-size: 13px;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.images-footer img{
+    width: 3rem;
+    height:auto;
+    padding:0px 10px;
+}
+.images2-footer img{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 9rem;
+    height:auto;
+}
+
+
+
+@media(max-width:1400px){
+    #panel{
+        flex-direction: column;
+    }
+    .buscador{
+        right:0;
+    }
+}
+    
+    @media(max-width:768px){
+        .mostrar-menu,
+        .esconder-menu{
+            display: block;
+        }
+    
+        .menu{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: rgb(44,24,131);
+            right: -100%;
+            top: 0;
+            text-align: center;
+            padding:  200px 0px;
+            z-index:100;
+            transition: 0.8s; 
+            
+        }
+        .menu a:focus{
+            border: 2px solid white;
+        }
+        .menu a{
+            background:rgba(219, 218, 224, 0.445); ;
+            border-radius: 20px;
+            margin: 20px;
+            display:block;
+      }
+      .menu img{
+        float: left;
+        display: block;
+        width: 50px;
+        transition: 0.8s;
+        position: absolute;
+        top: 5px;
+      }
+
+      .latam img{
+        margin-left:0;
+      }
+      .logo_responsive img{
+        display: block;
+        width: 150px;
+        margin: 100px 30px;
+      }
+
+      .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+      }
+      #check:checked ~ .menu{
+        right: 0;
+      }
+
+#panel{
+    flex-direction: column;
+}
+.buscador{
+    right:0;
+    font-size: 10px;
+    width: 30rem;
+}
+.informacion{
+  width: 70%;  
+}
+}
