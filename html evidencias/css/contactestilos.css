@@ -171,14 +171,12 @@
 /*dudas*/ 
 
 #dudas{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+    padding: 0 10px;
 }
 .contenido-covid{
     display: flex;
-    margin: 1rem 20rem;
-    border: 1px solid red;
+    justify-content: center;
+    
 }
 .texto{
     margin: 0 20rem;
@@ -186,7 +184,7 @@
 .texto h1{
     display: flex;
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     color: rgb(16, 0, 79);
     font-weight: lighter;
@@ -195,32 +193,122 @@
 }
 .corona{
     display:flex;
-    margin: 15px 10px;
-    border: 1px solid red;
-    border-radius: 10px;
+    width:600px ;
+    height: 150px;
+    margin: 15px 20px;
     
 }
 .corona img{
     width: 45px;
+    margin: 10px;
 }
 
 .corona a{
     display: flex;
-    padding: 10px 50px;
-    border: 1px solid black;
-    align-items: center;
-    text-decoration: none;
-    color: rgb(16, 0, 79);
-    font-weight: bold;
-    font-size: 20px;
-    padding:3rem 17rem 3rem 2rem;
-    
+     margin: 0 ;
+     border-radius:0.5rem;
+     border-color: rgb(48, 48, 48);
+     transition: all 0.3s;
+     box-shadow: rgb(16 0 79 / 12%) 0px 0.125rem 0.5rem;
+     cursor: pointer;
+     width: 100%;
+     font-size: 1.3rem;
+     text-decoration: none;
+     color: rgb(16, 0, 79);
+     font-weight: bold;
+     align-items: center;
     box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
+}
+.corona a:hover{
+    background: rgba(235, 235, 235, 0.438);
 }
 
-    
+    /*casos*/
+    #casos{
+        display:flex;
+        padding: 10px;
+        justify-content: center;
+        border: 1px solid red;
+        margin: 20px 0px;
+    }
+    .comunicate{
+        display: flex;
+        text-align:left;
+        
+        display: inline-block;
+        margin:0px 20px;
+    }
+    .comunicate h1{
+        font-size: 1.8rem;
+        color: rgb(16, 0, 79);
+        margin-bottom: 20px;
+    }
+    .comunicate h2{
+        font-weight: normal;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+        color: rgb(16, 0, 79);
+    }
+    .comunicate p{
+        font-weight: normal;
+        margin-bottom: 30px;
+        font-size: 1.1rem; 
+    }
+    .comunicate a{
+        display: flex;
+        text-align: center;
+        display: block;
+        padding:20px 150px;
+        border: 0.0625rem solid rgb(232, 17, 75);
+        border-radius: 0.5rem;
+        color: rgb(232, 17, 75);
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+    .comunicate a:hover{
+        background: rgba(232, 17, 74, 0.712);
+        color: white;
+    }
+    .revisar{
+        position: relative;
+        
+    }
+    .revisar h2{
+        font-size: 1.4rem;
+        color: rgb(16, 0, 79);
+        font-weight:normal;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+    .revisar p{
+        font-weight: normal;
+        margin-bottom: 30px;
+        font-size: 1.1rem; 
+    }
+    .email{
+        border-radius: 10px;
+        border:0.1rem solid grey;
+        padding:20px 10px;
+        padding-right: 9rem;
+        font-size: 1rem;
+    }
+    .revisar a{
+        text-align: center;
+        padding:20px 110px;
+        background:rgb(232, 17, 75);
+        border-radius: 0.5rem;
+        color: white;
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+    .revisar a:hover{
+        background:rgba(232, 17, 74, 0.699);
+    }
     
 
 /*Footer*/
