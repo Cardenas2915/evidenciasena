@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #banner{
@@ -37,29 +37,111 @@
 }
 
 .imagenfondo img{
-    height: 100vh;
+    height: 100%;
 }
+
 #panel{
-    border: 1px solid black;
-    margin: 0;
+    background-image: url(../images/fondo.png);
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .panel-ingreso{
-    display: inline-block;
-    border: 1px solid red;
+    display:inline-block;
+    border-radius: 0px 0px 10px 10px;
+    background: white;
+
 }
 
 .ingreso p{
     background:rgba(102,153,0,255);
-    padding: 10px 12px;
+    padding: 12px 0px;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
+    text-align: center;
 }
 .ingreso span{
     color: white;
     font-weight: 100;
+}
+.tipo p{
+    padding:10px 20px;  
+    font-size: 15px;
+    text-align: center;
+}
+
+#doc{
+    padding: 10px;
+    margin-top: 10px;
+}
+.documento{
+    display: flex;
+    flex-direction: column;
+    padding:10px 20px;
+    font-size: 15px;
+}
+
+.contraseña{
+    display: flex;
+    flex-direction: column;
+    padding:10px 20px;
+    font-size: 15px;
+}
+
+#contra{
+    padding: 10px;
+    margin-top: 10px;
+}
+.olvido{
+    display: flex;
+    flex-direction: column;
+    padding:10px 20px;
+    text-align: center;
+}
+.olvido a{
+    color: #369;
+    text-decoration: none;
+    font-size: 12px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.olvido a:hover{
+    text-decoration:underline;
+}
+
+
+.selector{
+    padding: 10px 20px;
+    
+}
+#formato{
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    
+}
+.ingresar{
+    background: rgba(102,153,0,255);
+    text-align: center;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+.ingresar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    
 }

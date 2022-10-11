@@ -19,25 +19,36 @@
     </section>
     <div class="barra"></div>
 
-    <div class="imgenfondo">
-        <img src="images/fondo.png" alt="">
-    </div>
-    
     <section id="panel">
     <div class="panel-ingreso">
     <div class="ingreso">
-        <p>INGRESO <span> usuarios registados</span></p>
+        <p>INGRESO <span> usuarios registrados</span></p>
     </div>
     <div class="tipo">
-        <p>ipo de documento de identidad</p>
+        <p>Tipo de documento de identidad</p>
+    </div>
+    <div class="selector">
+        <select name="formato" id="formato">
+            <option selected disabled>Tipo de Documento</option>
+            <option value="cedula">Cedula de Ciudadania</option>
+            <option value="tarjeta">Trajeta de Identidad</option>
+            <option value="extranjeria">Cedula de extranjeria</option>
+        </select>
     </div>
     <div class="documento">
         <label for="doc">Numero de documento:</label>
-        <input type="number" name="doc" placeholder="Ingrese numero de documento">
+        <input type="number"  id="doc" name="doc" placeholder="Ingrese numero de documento">
     </div>
-    <div class="contraeña">
-        <label for="contra">Contraeseña:</label>
-        <input type="number" name="contra" placeholder="Ingrese contraseña">
+    <div class="contraseña">
+        <label for="contra">Contraseña:</label>
+        <input type="password" id="contra" name="contra" placeholder="Ingrese contraseña">
+    </div>
+    <div class="olvido">
+        <a href="">¿Olvidé mi contraseña?</a>
+        <a href="">¿Su usuario está Bloqueado o Inactivo?</a>
+    </div>
+    <div class="ingresar">
+        <a href="">Ingresar</a>
     </div>
     </section>
 </body>
