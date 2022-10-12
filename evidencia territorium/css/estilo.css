@@ -3,16 +3,21 @@
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
 
 #banner{
-    margin: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .logo img{
-    width:10rem;
+    width:7rem;
 }
 
 .logo2{
@@ -20,7 +25,7 @@
     align-items: center;
 }
 .logo2 img{
-    width: 5rem;
+    width: 4rem;
     float:left;
     margin: 10px;
 }
@@ -36,19 +41,23 @@
     background-color: #ff8138;
 }
 
-.imagenfondo img{
-    height: 100%;
-}
+
 
 #panel{
-    background-image: url(../images/fondo.png);
-    height: 80vh;
+    background: url(../images/fondo.png) 100% no-repeat;
+    height: 80.7vh;
+    background-position: center top !important;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    
+    
 }
 
 .panel-ingreso{
+    border: 1px solid black;
     display:inline-block;
     border-radius: 0px 0px 10px 10px;
     background: white;
@@ -144,4 +153,29 @@
     padding: 10px;
     justify-content: center;
     
+}
+
+footer{
+    margin-top: auto;  
+}
+#footer{
+    background-color: #ff8138;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.imagen-footer img{
+    width: 11rem;
+    margin-right:30px ;
+}
+
+.texto-footer p{
+    color: white;
+    font-size: 15px;
+}
+.texto-footer span{
+    margin-left: 25px;
 }
