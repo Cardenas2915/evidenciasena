@@ -4,47 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Territorium || Bienvenidos</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <section id="banner">
         <div class="logo">
-            <img src="images/logo.png" alt="">
+           <a href=""> <img src="images/logo.png" alt=""></a>
         </div>
         <div class="logo2">
-            <img src="images/logomicro.png" alt="">
-            <a href="#">log in via Microsoft</a>
+            <a href="#"><img src="images/login-via-microsoft.png" alt="">
+            </a>
         </div>
     </section>
-    <div class="barra"></div>
+    
+
 <div class="fondo">
     <section id="panel">
     <div class="panel-ingreso">
     <div class="ingreso">
-        <p>INGRESO <span> usuarios registrados</span></p>
+        <p>Ingreso <span> usuarios registrados</span></p>
     </div>
     <div class="tipo">
         <p>Tipo de documento de identidad</p>
     </div>
     <div class="selector">
         <select name="formato" id="formato">
-            <option selected disabled>Tipo de Documento</option>
             <option value="cedula">Cedula de Ciudadania</option>
-            <option value="tarjeta">Trajeta de Identidad</option>
-            <option value="extranjeria">Cedula de extranjeria</option>
+            <option value="cedula">Tarjeta de Identidad</option>
+            <option value="cedula">Cedula de extranjeria</option>
+            <option value="cedula">Numero Ciego SENA</option>
+            <option value="cedula">Pasaporte</option>
+            <option value="cedula">Documento Nacional de identificacionasaporte</option>
+            <option value="cedula">Numero de Identificacion Tributaria</option>
+            <option value="cedula">PEP-RAMV</option>
+            <option value="cedula">PEP</option>
         </select>
     </div>
     <div class="documento">
         <label for="doc">Numero de documento:</label>
-        <input type="number"  id="doc" name="doc" placeholder="Ingrese numero de documento">
+        <input type="text"  id="doc" name="doc" placeholder="Ingrese numero de documento">
     </div>
     <div class="contraseña">
         <label for="contra">Contraseña:</label>
         <input type="password" id="contra" name="contra" placeholder="Ingrese contraseña">
     </div>
     <div class="olvido">
-        <a href="">¿Olvidé mi contraseña?</a>
+        <a href=""><img src="images/llave.png" alt=""> ¿Olvidé mi contraseña?</a>
         <a href="">¿Su usuario está Bloqueado o Inactivo?</a>
     </div>
     <div class="ingresar">
