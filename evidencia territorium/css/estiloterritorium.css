@@ -38,6 +38,7 @@
     font-family: "Josefin Sans";
     font-weight: bold;
     font-size: 20px;
+    letter-spacing: 0.1rem;
 }
 .texto{
     position: absolute;
@@ -48,6 +49,7 @@
 #barra{
     background-color: #e57816 !important;
     padding: 5px;
+  
 }
 .nav a{
     text-decoration: none;
@@ -79,7 +81,6 @@ nav{
     
 }
 .contenido-slider2{
-    width: 100%;
     padding: 20px;
     padding-top: 50px;
     background: white;
@@ -89,12 +90,15 @@ nav{
 
 .slide {
     position: relative;
+    display: flex;
     margin-top: 26px;
+    align-items: center;
+    justify-content: center;
 }
 .slide-inner {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 80%;
     height: calc( 300px + 5em);
 }
 .slide-open:checked + .slide-item {
@@ -138,7 +142,7 @@ nav{
     right: 2%;
 }
 .slide-control:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0);
     color: #aaaaaa;
 }
 #slide-1:checked ~ .control-1,
@@ -184,4 +188,98 @@ nav{
       #slide-5:checked ~ .control-5 ~ .slide-indicador 
       li:nth-child(5) .slide-circulo {
         color: #007B74;
+}
+
+#ingresar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f1f0ef;
+    border: 1px solid black;
+    
+}
+.ingresar-panel{
+    background-color: #f1f0ef;
+    border: 1px solid gray;
+    margin-right: 20px;
+    width: 35rem;
+    height: 40rem;
+   
+    
+}
+
+.iconos-ingresar{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.bi-icon{
+    color: rgb(110, 109, 109);
+    width: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+.scroll{
+    overflow-y: scroll;
+    height: 35rem;
+}
+
+.boton-ingreso p{
+    background-color: #FF6C00;
+    color: rgb(255,255,255);
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: center;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    transition: 0.4s;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+.boton-ingreso p:hover{
+    background: rgba(128, 128, 128, 0.425);
+}
+.boton-ingreso h2{
+    width: 30rem;
+    height: 32rem;
+}
+.linea{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid grey;
+}
+.images-azul{
+    background-color: #f1f0ef;
+    border: 1px solid grey;
+    margin-right: 20px;
+    width: 35rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 2px;
+}
+
+.lista{
+    width: 100%;
+    text-align: center;
+}
+.lista img{
+    height: 50px;
+    width: auto;
+}
+.lista-images{
+    margin-top: 10px;
+    background-color: #1698a4;
+    cursor: pointer;
+}
+.lista-images:hover{
+    background-color: #167b85;
 }
