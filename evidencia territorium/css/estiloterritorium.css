@@ -1,7 +1,9 @@
 *{
     margin: 0;
 }
-
+body{
+    background-color: #f1f0ef;
+}
 
 /*.fecha{
     display: flex;
@@ -315,7 +317,7 @@ nav{
     display: flex;
     background-color: #ff6b00;
     text-align: center;
-    width: 95%;
+    width: 97%;
     justify-content: center;
     margin: 0 auto;
     margin-top: 30px;
@@ -343,4 +345,28 @@ nav{
 .images-link img{
     width: 15rem;
 
+}
+.atras a{
+    color: #238276 ;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.atras a:hover{
+    text-decoration: underline;
+}
+.atras{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.contador{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contador p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5d5d5d;
+    padding-bottom: 10px;
+    font-size: 14px;
 }
