@@ -370,3 +370,47 @@ nav{
     padding-bottom: 10px;
     font-size: 14px;
 }
+
+#sector{
+    margin-top: 20px;
+}
+
+.contenido-sector{
+    width: 60%;
+    background: white;
+    margin: auto;
+    padding:10px 0px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.664);
+    
+}
+.contenido-texto{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.contenido-texto svg{
+    padding: 10px;
+    color: rgb(0,167,174);
+}
+.contenido-texto h1{
+    color: #fc7323;
+}
+.linea2{
+    border-top: 2px dashed rgb(255,103,29);
+    height:5px ;
+    width: 98%;
+    margin: auto;
+}
+.images-saturade{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.images-saturade2 img{
+    width: 12rem;
+    filter: saturate(0%);
+}
+.images-saturade2 img:hover{
+    filter: saturate(100%);
+}
