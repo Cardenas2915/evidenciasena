@@ -376,7 +376,7 @@ nav{
 }
 
 .contenido-sector{
-    width: 60%;
+    width: 65%;
     background: white;
     margin: auto;
     padding:10px 0px;
@@ -413,4 +413,64 @@ nav{
 }
 .images-saturade2 img:hover{
     filter: saturate(100%);
+}
+
+
+
+.contenido-listado{
+    display: flex;
+    width: 65%;
+    background: white;
+    margin: auto;
+    padding:10px 0px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.664);
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.list a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5d5d5d;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+.list a:hover{
+    text-decoration: underline;
+}
+.list ul li{
+    padding: 2px ;
+}
+.list ul{
+   color: #C61720;
+   font: 20px;
+}
+#footer{
+    width: 98%;
+    margin: auto;
+    background-color: #ff6b00;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 30px 0px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
+}
+.contenido-footer{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+}
+.texto-footer a, .texto-footer p{
+    color: #FFFCFC;
+    font-size: 11px;
+    line-height: 17px;
+    text-decoration: none;
+}
+.texto-footer a:hover{
+    text-decoration: underline;
 }
