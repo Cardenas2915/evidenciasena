@@ -5,6 +5,7 @@
 
     openButton.addEventListener('click', () => {
         menu.classList.add('nav_link--show');
+        
     });
     
     closeMenu.addEventListener('click', () => {
