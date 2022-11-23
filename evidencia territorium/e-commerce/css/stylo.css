@@ -114,6 +114,7 @@ header.down .nav_links{
     display: grid;
     grid-template-columns:auto;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .hero_tittle{
@@ -147,12 +148,107 @@ transform: scale(1.1);
     margin-bottom: 350px;
 }
 
+/* Slider */
+
+.slider_auto{
+    width: 100%;
+    height: auto;
+    background: rgba(92, 88, 88, .6);
+    
+}
+
+.slider_container{
+    max-width: 800px;
+    height: auto;
+    margin:0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slider img{
+    width: 100%;
+    vertical-align: middle;
+}
+.prev-button,
+.next-button{
+    width: 40px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(240,240,255,0.7);
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+}
+.prev-button{
+    left: 0;
+}
+
+.next-button{
+    right: 0;
+}
+.prev-button:hover,
+.next-button:hover{
+    color: white;
+}
+
+.lines{
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    
+}
+.line{
+    padding:1.5px 10px ;
+    margin: 0 3px;
+    background-color: rgba(240,240,255,0.7);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.active,
+.line:hover{
+    background-color: white;
+}
+
+.slider{
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0.5s;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* responsive slider */
+
+@media (max-width:768px){
+    .prev-button,
+    .next-button{
+        font-size: 20px;
+    }
+    .line{
+        padding: 1px 8px;
+    }
+}
 
 /* About */
 
 
 .about{
     text-align: center;
+    margin-top: 200px;
 }
 .subtitle{
     --color-title:#001A49;
