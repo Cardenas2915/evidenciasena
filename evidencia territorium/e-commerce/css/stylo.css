@@ -7,6 +7,9 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 h1{ 
     margin: 0;
 }
@@ -69,6 +72,9 @@ header.down .nav_links{
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav_links:hover{
@@ -144,8 +150,8 @@ transform: scale(1.1);
     align-content: center;
     gap: 1em;
     text-align: center;
-    padding-top: 150px;
-    margin-bottom: 350px;
+    padding-top: 280px;
+    margin-bottom: 250px;
 }
 
 /* Slider */
@@ -154,6 +160,7 @@ transform: scale(1.1);
     width: 100%;
     height: auto;
     background: rgba(92, 88, 88, .6);
+   
     
 }
 
@@ -248,7 +255,7 @@ transform: scale(1.1);
 
 .about{
     text-align: center;
-    margin-top: 200px;
+    padding-top: 160px;
 }
 .subtitle{
     --color-title:#001A49;
@@ -256,26 +263,58 @@ transform: scale(1.1);
     margin-bottom: 25px;
 }
 .about_main{
-    padding-top: 80px;
+    padding-top: 60px;
     display: grid;
     width: 90%;
     margin: 0 auto;
     gap: 1em;
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    padding-bottom: 30px;
 }
 .about_paragraph{
     line-height: 1.7;
 }
 
 .about_icons{
+    padding-bottom: 10px;
     display:grid;
-    gap: 1em;
     justify-items: center;
     width: 300px;
     overflow: hidden;
     margin:0 auto ;
+    border-radius: 10px;
+    transition: all 0.3s;
+
 }
+
+
+.carrito{
+padding: 5px 30px;
+border-radius: 10px;
+display: flex;
+text-decoration: none;
+background: rgba(108, 20, 250, 0.932);
+color: #fff;
+transition: all 0.3s;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.image-carrito{
+    padding-right: 5px;
+    
+}
+.carrito:hover{
+    box-shadow: rgb(238, 13, 13) 0px 0.125rem 0.5rem;
+}
+
+.about_icons:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(16, 0, 79, 0.322) 0px 0.125rem 0.5rem;
+}
+
+
 
 .about_icon{
     width: 300px;
@@ -308,7 +347,7 @@ transform: scale(1.1);
         z-index: 100;
         opacity: 0;
         pointer-events: none;
-        transition:all 0.7s;
+        transition:all 0.4s ease-in-out;
         
     }
     
