@@ -236,7 +236,10 @@ display: block;
     font-weight: 600;
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
     color: var(--color-cta);
+    position: relative;
+    overflow: hidden;
 }
+
 
 .price_element--best{
     background-color: #ff7143;
