@@ -58,6 +58,12 @@ header.down .subnombre{
     color: black;
     
 }
+header.down .container-icon{
+    color: black;
+}
+
+
+
 
 .abajo{
     background: rgb(37, 37, 37);
@@ -180,6 +186,8 @@ transform: scale(1.1);
 
 .container-icon{
     position: relative;
+    color: #fff;
+    cursor: pointer;
 }
 .count-products{
     position: absolute;
@@ -359,9 +367,9 @@ transform: scale(1.1);
     display: grid;
     width: 90%;
     margin: 0 auto;
-    gap: 1em;
+    gap: 2em;
     overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    grid-template-columns:1fr 1fr 1fr 1fr;
     padding-bottom: 30px;
 }
 .about_paragraph{
@@ -392,6 +400,7 @@ transition: all 0.3s;
 justify-content: center;
 align-items: center;
 cursor: pointer;
+border: none;
 }
 .image-carrito{
     padding-right: 5px;
