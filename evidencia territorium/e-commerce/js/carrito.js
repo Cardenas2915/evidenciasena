@@ -6,12 +6,12 @@ btnCart.addEventListener('click', () => {
 });
 
 
-const cartInfo = document.querySelector('.cart-prouct');
+const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
 const productList = document.querySelector('.container-items');
 let allProducts = [];
 
 productList.addEventListener('click', e => {
-    
-})
+    console.log(e.target.classList.contains('btn-add-cart'))
+});
