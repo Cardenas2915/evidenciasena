@@ -754,3 +754,14 @@ display: block;
     align-items: center;
 }
 
+
+/* texto de carrito vacio*/
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
